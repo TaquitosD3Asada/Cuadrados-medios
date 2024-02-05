@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cuadrados Medios</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1 class="site-heading text-center text-faded d-none d-lg-block">
+            <span class="site-heading-upper text-primary mb-3">Algoritmo de</span>
+            <span class="site-heading-lower">Cuadrados Medios</span>
+        </h1>
+    </header>
+
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-content">
+                    <label for="semilla">Semilla Inicial:</label>
+                    <input type="text" id="semilla" placeholder="Ingrese la semilla inicial">
+
+                    <label for="iteraciones">Cantidad de Iteraciones:</label>
+                    <input type="text" id="iteraciones" placeholder="Ingrese la cantidad de iteraciones">
+
+                    <button id="btnGenerar">Generar Números</button>
+                </div>
+                <!-- Nueva sección para los resultados -->
+                <div class="resultados-container">
+                    <h2>Resultados:</h2>
+                    <div id="resultado"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-faded text-center py-5">
+        <div class="container">
+            <p class="m-0 small">Elaborado por: Kevin Alí Maldonado López</p>
+        </div>
+    </footer>
+
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script src="js/algoritmoCuadradosMedios.js"></script>
+
+    <script>
+        // Añade el event listener utilizando addEventListener
+        document.getElementById('btnGenerar').addEventListener('click', function() {
+            generarNumeros();
+        });
+    </script>
+</body>
+
+</html>
