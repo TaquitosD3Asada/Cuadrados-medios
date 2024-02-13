@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Cuadrados Medios</title>
+    <title>Productos Medios</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link href="css/styles.css" rel="stylesheet" />
 </head>
@@ -12,7 +12,7 @@
     <header>
         <h1 class="site-heading text-center text-faded d-none d-lg-block">
             <span class="site-heading-upper text-primary mb-3">Algoritmo de</span>
-            <span class="site-heading-lower">Cuadrados Medios</span>
+            <span class="site-heading-lower">Productos Medios</span>
         </h1>
     </header>
 
@@ -20,13 +20,17 @@
         <div class="container">
             <div class="form-container">
                 <div class="form-content">
-                    <label for="semilla">Semilla Inicial:</label>
-                    <input type="text" id="semilla" placeholder="Ingrese la semilla inicial">
+                    <label for="semilla1">Semilla 1:</label>
+                    <input type="text" id="semilla1" placeholder="Ingrese la primera semilla">
+
+                    <label for="semilla2">Semilla 2:</label>
+                    <input type="text" id="semilla2" placeholder="Ingrese la segunda semilla">
 
                     <label for="iteraciones">Cantidad de Iteraciones:</label>
                     <input type="text" id="iteraciones" placeholder="Ingrese la cantidad de iteraciones">
 
                     <button id="btnGenerar">Generar Números</button>
+                    <button id="btnReiniciar">Reiniciar</button> <!-- Botón para reiniciar el formulario -->
                 </div>
                 <!-- Nueva sección para los resultados -->
                 <div class="resultados-container">
@@ -42,17 +46,9 @@
             <p class="m-0 small">Elaborado por: Kevin Alí Maldonado López</p>
         </div>
     </footer>
-
-    <!-- Core theme JS-->
+    <script src="js/Proyecto-Simulacion(ProductosMedios)/js/algoritmoProductosMedios.js"></script> 
     <script src="js/scripts.js"></script>
-    <script src="js/algoritmoCuadradosMedios.js"></script>
-
-    <script>
-        // Añade el event listener utilizando addEventListener
-        document.getElementById('btnGenerar').addEventListener('click', function() {
-            generarNumeros();
-        });
-    </script>
 </body>
 
 </html>
+
